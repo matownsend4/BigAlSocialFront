@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Al Goes Social</title>
+
+    <!-- read in css:  tells index to use the navigation from css -->
+    <!-- rel tells it the type, href tells it where to find it -->
+    <link rel = "stylesheet" href = "./css/index.css">
+</head>
+
+<body onload = "getPosts()">  <!-- call javascript function -->
+    <!-- read in JavaScript file -->
+    <script type = "text/JavaScript" src = "scripts/index.js"></script>
+
+    <!-- This is our navbar section of our code -->
+    <!-- class is used to style them -->
+    <nav class = "navbar">
+        <!-- unordered list -->
+        <ul> 
+            <!-- list items -->
+            <li>
+                <!-- anchor tag -->
+                <a class = "red" href = "">Home</a>
+            </li>
+            <!-- not styles so left out class -->
+            <li><a href = "">About</a></li>
+            <li><a href = "">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- banner section -->
+    <div class = "banner">
+        <h1>Big Al's Landing Page</h1>
+        <!-- classes are used if we can reuse them and they can apply to multiple things -->
+        <!-- if it applies to just one thing we can use 'id' -->
+        <img id = "small-bigal" src = "images/bigal1.png" alt = "no image">
+        <p>Because everything is better with Big Al</p>
+    </div>
+
+    <!-- social media section -->
+    <div class = "social-section">
+        <span id = "social" class = "bold">Big Al Goes Social</span>
+        <p class = "bold">Big Al's 321 social media</p>
+    </div>
+
+    <form id="submission" onsubmit = "return false"; method = "POST">
+        <label for="post">Update Status: </label>
+        <input type = "text" name = "post" id = "post"/>
+        <span id="dateTime"></span>
+        <input type = "submit" value = "Submit" onclick = "postStatus()"/>
+    </form>
+
+    <div id = "posts">
+        
+    </div>
+    <form id="submission" onsubmit = "return false"; method = "put">
+
+        <input type = "text" name = "edit" placeholder = "Enter ID to Edit" id = "edit"/>
+        <input type = "text" name = "update"  placeholder = "What would you like to say?" id = "update"/>
+        <input type = "submit" value = "Edit Post" onclick = "editStatus()"/>
+    </form>
+    
+    <form id="submission" onsubmit = "return false"; method = "delete">
+        <input type = "text" name = "delete" placeholder = "Enter ID to Delete"  id = "delete"/>
+        <input type = "submit" value = "Delete Post" onclick = "deleteStatus()"/>
+    </form>
+
+    
+</body>
+</html>

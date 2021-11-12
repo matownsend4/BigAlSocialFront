@@ -1,0 +1,73 @@
+/* accesses based on the name that was set to class in html */
+.navbar {
+    background-color: white;
+    position: fixed; /* navbar stays in place even page scrolled and everything else moves up */
+    top: 0; /* starts at very top of page */
+    width: 100%; /* goes all the way across the page */
+}
+
+/* list items under navbar */
+.navbar li {
+    display: inline; /*  instead of top to bottom, goes across */
+    padding: 20px; /* so they dont sit on top of each other */
+}
+
+/* for the anchor tags themselves */
+.navbar a {
+    text-decoration: none; /* gets rid fo the underlining */
+    color: black;
+}
+
+a.red {
+    color: red;
+}
+
+.banner {
+    background-color: #660000;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    /* 100 top and bottom, 0 right and left */
+    padding: 100px 0;
+}
+
+/* '#' since it is an id not a class */
+#small-bigal {
+    height: 100px;
+}
+
+.social-section {
+    padding: 20px 50px;
+}
+
+#social{
+    color: #660000;
+    font-size: 100px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+#posts ul{
+    list-style-type: none;
+}
+
+.avatar {
+    padding: 20px 50px;
+    background-image: url('../images/bigal2.JPG');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#submission {
+    padding: 20px 50px;
+}
+
+#dateTime {
+    display: none;
+}
